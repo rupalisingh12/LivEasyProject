@@ -5,8 +5,8 @@ public class PayLoads {
     String unloadingPoint;
     String productType;
     String truckType;
-    int noOfTrucks;
-    int weight;
+    String noOfTrucks;
+    String weight;
     String comment;
     String shipperID;
     String date;
@@ -15,7 +15,7 @@ public class PayLoads {
     public PayLoads() {
     }
 
-    public PayLoads(String loadingPoint, String unloadingPoint, String productType, String truckType, int noOfTrucks, int weight, String comment, String shipperID, String date, int loadId) {
+    public PayLoads(String loadingPoint, String unloadingPoint, String productType, String truckType, String noOfTrucks, String weight, String comment, String shipperID, String date, int loadId) {
         this.loadingPoint = loadingPoint;
         this.unloadingPoint = unloadingPoint;
         this.productType = productType;
@@ -77,19 +77,19 @@ public class PayLoads {
         this.truckType = truckType;
     }
 
-    public int getNoOfTrucks() {
+    public String getNoOfTrucks() {
         return noOfTrucks;
     }
 
-    public void setNoOfTrucks(int noOfTrucks) {
+    public void setNoOfTrucks(String noOfTrucks) {
         this.noOfTrucks = noOfTrucks;
     }
 
-    public int getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
