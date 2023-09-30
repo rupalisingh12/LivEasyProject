@@ -12,6 +12,9 @@ public class PayLoads {
     String date;
     int loadId;
 
+    public PayLoads() {
+    }
+
     public PayLoads(String loadingPoint, String unloadingPoint, String productType, String truckType, int noOfTrucks, int weight, String comment, String shipperID, String date, int loadId) {
         this.loadingPoint = loadingPoint;
         this.unloadingPoint = unloadingPoint;
