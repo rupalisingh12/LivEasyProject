@@ -14,7 +14,6 @@ public class LoadService {
 
     private LoadRepository loadRepository;
 
-    @Autowired
     public LoadService(LoadRepository loadRepository) {
         this.loadRepository = loadRepository;
     }
@@ -63,7 +62,7 @@ public class LoadService {
             throw new Exception("Load not found with id: " + request.getLoadId());
         }
         if(!StringUtils.isEmpty(request.getLoadingPoint())){
-            loadModel.setLoadingPoint(loadModel.getLoadingPoint());
+            loadModel.setLoadingPoint(request.getLoadingPoint());
         }
         if(!StringUtils.isEmpty(request.getProductType())) {
             loadModel.setProductType(request.getProductType());

@@ -50,7 +50,7 @@ public class LoadController {
         // TODO complete API
         return payLoad;
     }
-    @PostMapping
+    @PostMapping("/load")
     public PayLoads createNewLoadId(@RequestBody PayLoads payLoads){
         loadId=loadId+1;
         payLoads.setLoadId(loadId);

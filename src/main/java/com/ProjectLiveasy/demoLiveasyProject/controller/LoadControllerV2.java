@@ -19,6 +19,7 @@ public class LoadControllerV2 {
 
     @Autowired
     public LoadControllerV2(LoadService loadService) {
+
         this.loadService = loadService;
     }
 
